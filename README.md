@@ -9,7 +9,7 @@ To get started, type `yarn install` or `npm install` in the root directory.
 
 ## Component Structure
 
-The /src/ folder is strcutured for maximum clarity and reuseability.
+The /src folder is strcutured for maximum clarity and reuseability.
 
 ### /actions
 
@@ -36,7 +36,7 @@ Current Views:
 * footer
   * footer component, persists on the bottom of every page
 * landing
-  * router destination '/'
+  * router destination `/`
 * navigation
   * navigation header component, persists on the top of every page
 
