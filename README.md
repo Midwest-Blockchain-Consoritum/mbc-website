@@ -1,5 +1,58 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Architecture by [Zachary Thielemann](https://github.com/zachdt)
+
+To get started, type `yarn install` or `npm install` in the root directory.
+<br />
+
+## Component Structure
+
+The /src/ folder is strcutured for maximum clarity and reuseability.
+
+### /actions
+
+Contains all functions that interact with an external server/database.  (ex. logIn, logOut, sendEmail, etc.)
+
+### /assets
+
+Contains all static assests (favicons mostly).  Never drop images in here, always reference an external CDN link.
+
+### /router 
+
+Contains `react-router-dom` components and logic.  Wrapped by Navigation Header and Footer.  Used to add or authenticate new routes.
+
+### /styles
+
+Contains all style files.  Need to write styles for a component? Create a folder with that component's title, then create a .css or .js file.
+
+### /views
+
+Contains all UI related custom react components, broken into layout components and router destinations.
+All router destinations are rendered in between the navigation bar and footer.
+
+Current Views:
+* footer
+  * footer component, persists on the bottom of every page
+* landing
+  * router destination '/'
+* navigation
+  * navigation header component, persists on the top of every page
+
+
+## Code Styling 
+
+This project was built using the Prettier and ESLint plugin for VSCode.  If you are not using VSCode (you should lol), Prettier and ESLint will install as a dev dependancy from `yarn install`.
+
+### Code Rules
+
+* tabWidth
+  * 4 spaces
+* semi
+  * false - don't use semicolons at the end of statements!
+* singleQuote
+  * use a single quote ('example') not a double ("example")
+
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -37,32 +90,10 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
