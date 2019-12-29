@@ -9,7 +9,7 @@ To get started, type `yarn install` or `npm install` in the root directory.
 
 ## Component Structure
 
-The /src folder is strcutured for maximum clarity and reuseability.
+The `/src` folder is strcutured for maximum clarity and reuseability.
 
 ### /actions
 
@@ -19,13 +19,13 @@ Contains all functions that interact with an external server/database.  (ex. log
 
 Contains all static assests (favicons mostly).  Never drop images in here, always reference an external CDN link.
 
-### /router 
+### /router
 
 Contains `react-router-dom` components and logic.  Wrapped by Navigation Header and Footer.  Used to add or authenticate new routes.
 
 ### /styles
 
-Contains all style files.  Need to write styles for a component? Create a folder with that component's title, then create a .css or .js file.
+Contains all style files.  This project uses `react-jss`.  Need to write styles for a component? Create a folder with that component's title,then create a .js that exports an `react-jss` object.  Pass that object to your component and bam you got styles.
 
 ### /views
 
@@ -53,6 +53,8 @@ This project was built using the Prettier and ESLint plugin for VSCode.  If you 
   * false - don't use semicolons at the end of statements!
 * singleQuote
   * use a single quote ('example') not a double ("example")
+* jsxSingleQuote
+  * applies singleQuote to .jsx files
 
 
 ## Available Scripts
