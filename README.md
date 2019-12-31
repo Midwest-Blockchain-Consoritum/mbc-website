@@ -19,9 +19,9 @@ Contains all functions that interact with an external server/database.  (ex. log
 
 Contains all static assests (favicons mostly).  Never drop images in here, always reference an external CDN link.
 
-### /router
+### /routes
 
-Contains `react-router-dom` components and logic.  Wrapped by Navigation Header and Footer.  Used to add or authenticate new routes.
+Contains active `react-router-dom` route list and respective components.  Passes BrowserRouter to child components.
 
 ### /styles
 
