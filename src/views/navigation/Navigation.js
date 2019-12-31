@@ -1,37 +1,64 @@
 import React from 'react'
-import { Typography, AppBar, Toolbar } from '@material-ui/core'
-import { Link } from 'react-router-dom'
+import { Route, Link } from 'react-router-dom'
 
+import { Typography, AppBar, Toolbar, Tabs, Tab, withStyles} from '@material-ui/core'
 import {createUseStyles} from 'react-jss'
 import styles from '../../styles/navigation/Navigation'
 
 const useStyles = createUseStyles(styles)
 
+const AntTab = withStyles(() => ({
+  root: {
+    textTransform: 'none',
+    minWidth: 72,
+    '&:hover': {
+      color: 'purple',
+      opacity: 1,
+    },
+    '&$selected': {
+      color: '#purple',
+      fontWeight: '400',
+    },
+    '&:focus': {
+      color: '#purple',
+    },
+  },
+  selected: {},
+}))(props => <Tab disableRipple {...props} />)
+
+
 const Navigation = () => {
   const classes = useStyles()
   return (
     <div className={classes.root}>
-      <AppBar position='static'>
-        <Toolbar>
-          <div className={classes.title}>
-            <Typography variant='h4'>
-              <Link to='/'>
-                Midwest Blockchain Consoritum
-              </Link>
-            </Typography>
+      <Route render={({ location }) => (
+
+        <AppBar position='static' color='default'>
+          <Toolbar>
+            
+            <div className={classes.title}>
+              <Typography variant='h4'>
+                <Link className={classes.link} to='/'>
+                  Midwest Blockchain Consoritum
+                </Link>
+              </Typography>
+              </div>
+            <div>
+            <Tabs className={classes.tabs} value={location.pathname}>
+              <AntTab className={classes.tabItem} label='About' value='/about' component={Link} to={'/about'} />
+              <AntTab label='Consulting' value='/consulting' component={Link} to={'/consulting'} />
+            </Tabs>
             </div>
-          <div>    
-          <Typography variant='h5'>
-            <Link to='/about'>
-              About
-            </Link>
-          </Typography>
-          </div>
-        </Toolbar>
-      </AppBar>
-      
+          </Toolbar>
+        </AppBar>
+
+
+      )} />
+        
     </div>
   )
+
 }
+
 
 export default Navigation
