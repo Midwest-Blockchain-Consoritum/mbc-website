@@ -20,13 +20,10 @@ const Footer = () => {
             <Typography variant='h6'>
               &copy;2020 Midwest Blockchain Consoritum
             </Typography>
-            <Typography variant='body1'>
-              written by zachdt
-            </Typography>
           </div>
         </Grid>
         <Grid item xs={6}>
-          <Paper elevation={4} square>
+          <Paper elevation={8} square>
             <div className={classes.paper}>
               <IconButton aria-label='twitter'>
                 <TwitterIcon className={classes.social}/>

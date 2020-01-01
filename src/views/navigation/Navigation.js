@@ -26,6 +26,18 @@ const AntTab = withStyles(() => ({
   selected: {},
 }))(props => <Tab disableRipple {...props} />)
 
+const Title = () => {
+  const classes = useStyles()
+  return (
+    <div className={classes.title}>
+      <Typography variant='h4'>
+        <Link className={classes.link} to='/'>
+          Midwest Blockchain Consoritum
+        </Link>
+      </Typography>
+    </div>
+  )
+}
 
 const Navigation = () => {
   const classes = useStyles()
@@ -35,19 +47,13 @@ const Navigation = () => {
 
         <AppBar position='static' color='default'>
           <Toolbar>
+            <Title />
             
-            <div className={classes.title}>
-              <Typography variant='h4'>
-                <Link className={classes.link} to='/'>
-                  Midwest Blockchain Consoritum
-                </Link>
-              </Typography>
-              </div>
             <div>
-            <Tabs className={classes.tabs} value={location.pathname}>
-              <AntTab className={classes.tabItem} label='About' value='/about' component={Link} to={'/about'} />
-              <AntTab label='Consulting' value='/consulting' component={Link} to={'/consulting'} />
-            </Tabs>
+              <Tabs className={classes.tabs} value={location.pathname}>
+                <AntTab className={classes.tabItem} label='About' value='/about' component={Link} to={'/about'} />
+                <AntTab label='Consulting' value='/consulting' component={Link} to={'/consulting'} />
+              </Tabs>
             </div>
           </Toolbar>
         </AppBar>
