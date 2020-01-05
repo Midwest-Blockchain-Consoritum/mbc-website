@@ -6,7 +6,10 @@ const styles = {
     flexGrow: 1,
     textDecoration: 'none',
     color: 'white',
-  }  
+  },
+  tabs: {
+    color: 'purple'
+  }
 }
 
 

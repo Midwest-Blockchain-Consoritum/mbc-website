@@ -7,24 +7,27 @@ import styles from '../../styles/navigation/Navigation'
 
 const useStyles = createUseStyles(styles)
 
-const AntTab = withStyles(() => ({
+
+const AltTab = withStyles(() => ({
   root: {
     textTransform: 'none',
     minWidth: 72,
     '&:hover': {
-      color: 'purple',
+      color: 'secondary',
       opacity: 1,
     },
     '&$selected': {
-      color: '#purple',
+      color: 'purple',
       fontWeight: '400',
     },
     '&:focus': {
-      color: '#purple',
+      color: 'secondary',
     },
   },
   selected: {},
 }))(props => <Tab disableRipple {...props} />)
+
+
 
 const Title = () => {
   const classes = useStyles()
@@ -50,14 +53,13 @@ const Navigation = () => {
             <Title />
             
             <div>
-              <Tabs className={classes.tabs} value={location.pathname}>
-                <AntTab className={classes.tabItem} label='About' value='/about' component={Link} to={'/about'} />
-                <AntTab label='Consulting' value='/consulting' component={Link} to={'/consulting'} />
+              <Tabs indicatorColor='primary' className={classes.tabs} value={location.pathname}>
+                <AltTab className={classes.tabItem} label='About' value='/about' component={Link} to={'/about'} />
+                <AltTab label='Consulting' value='/consulting' component={Link} to={'/consulting'} />
               </Tabs>
             </div>
           </Toolbar>
         </AppBar>
-
 
       )} />
         

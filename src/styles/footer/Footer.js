@@ -7,18 +7,20 @@ const styles = {
     bottom: 0,
   },
   paper: {
-    padding: '.5em',
+    padding: '1.5em',
     paddingLeft: '1em',
     textAlign: 'left',
     background: 'purple',
-
-  },
-  social: {
+    width: '100%',
     color: 'white'
   },
+  social: {
+    color: 'purple'
+  },
   footerLeft: {
-    padding: '2em',
+    padding: '1em',
     textAlign: 'right',
+    verticalAlign: 'center'
   },
 }
 

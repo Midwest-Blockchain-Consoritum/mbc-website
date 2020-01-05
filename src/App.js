@@ -1,12 +1,26 @@
 import React from 'react'
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 
 import Routes from './routes/Routes'
 
 import GoogleFontLoader from 'react-google-font-loader'
 
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#9c27b0'
+    },
+    secondary: {
+      main: '#e1bee7',
+    }
+  }
+})
+
+
 const App = () => {
   return (
-    <div>
+    <MuiThemeProvider theme={theme}>
       <GoogleFontLoader 
         fonts={[
           {
@@ -20,8 +34,7 @@ const App = () => {
         ]}
       />
       <Routes />
-    </div>
-    
+    </MuiThemeProvider>
   )
 }
 

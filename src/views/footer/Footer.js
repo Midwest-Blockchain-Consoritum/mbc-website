@@ -14,18 +14,10 @@ const Footer = () => {
   const classes = useStyles()
   return (
     <div className={classes.root}>
-      <Grid container spacing={2}>
+      <Grid container spacing={0}>
         <Grid item xs={6}>
           <div className={classes.footerLeft}>
-            <Typography variant='h6'>
-              &copy;2020 Midwest Blockchain Consoritum
-            </Typography>
-          </div>
-        </Grid>
-        <Grid item xs={6}>
-          <Paper elevation={8} square>
-            <div className={classes.paper}>
-              <IconButton aria-label='twitter'>
+          <IconButton aria-label='twitter'>
                 <TwitterIcon className={classes.social}/>
               </IconButton>
               <IconButton aria-label='facebook'>
@@ -34,6 +26,15 @@ const Footer = () => {
               <IconButton aria-label='linkedin'>
                 <LinkedInIcon className={classes.social}/>
               </IconButton>
+          </div>
+        </Grid>
+        <Grid item xs={6}>
+          <Paper elevation={8} square>
+            <div className={classes.paper}>
+              <Typography variant='body1'>
+                &copy;2020 Midwest Blockchain Consoritum
+              </Typography>
+              
             </div>
           </Paper>        
         </Grid>

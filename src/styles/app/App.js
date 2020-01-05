@@ -1,9 +1,14 @@
 
 
 const styles = {
+  '@global': {
+    body: {
+      margin: 0,
+      marginRight: '-2px'
+    }
+  },
   root: {
-    background: '',
-    margin: '-8px',
+    margin: '0',
     fontFamily: 'Roboto'
   },
   page: {
