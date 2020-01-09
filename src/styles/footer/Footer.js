@@ -1,27 +1,24 @@
 
 const styles = {
   root: {
-    marginTop: '0em',
     width: '100%',
-    position: 'absolute',
-    bottom: 0,
-  },
-  paper: {
-    padding: '1.5em',
-    paddingLeft: '1em',
-    textAlign: 'left',
-    background: 'purple',
-    width: '100%',
-    color: 'white'
   },
   social: {
-    color: 'purple'
+    color: 'white'
   },
-  footerLeft: {
-    padding: '1em',
+  footerPrimary: {
+    color: 'purple',
     textAlign: 'right',
-    verticalAlign: 'center'
+    marginRight: '1em',
+    top: '20%',
+    position: 'relative'
   },
+  footerSecondary: {
+    backgroundColor: 'purple',
+    color: 'white',
+    textAlign: 'left',
+    verticalAlign: 'bottom'
+  }
 }
 
 export default styles

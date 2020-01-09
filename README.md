@@ -2,9 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Architecture by [Zachary Thielemann](https://github.com/zachdt)
+Author: [Zachary Thielemann](https://github.com/zachdt)
 
-To get started, type `yarn install` or `npm install` in the root directory.
+To get started, type `yarn install` or `npm install` in the root directory after cloning.
 <br />
 
 ## Component Structure
@@ -30,7 +30,6 @@ Contains all style files.  This project uses `react-jss`.  Need to write styles 
 ### /views
 
 Contains all UI related custom react components, broken into layout components and router destinations.
-All router destinations are rendered in between the navigation bar and footer.
 
 Current Views:
 * footer
@@ -40,6 +39,9 @@ Current Views:
 * navigation
   * navigation header component, persists on the top of every page
 
+## Grid System
+
+Material-UI includes a built-in breakpoint system for adjusting pages for different screen sizes.  The Grid component container/item system is utilized in all views.  These breakpoints are not expressed in css/jss, but at the compontent level.  Read `/src/views/landing/Landing.js` for a good example of integration.
 
 ## Code Styling 
 

@@ -11,7 +11,7 @@ const useStyles = createUseStyles(styles)
 const AltTab = withStyles(() => ({
   root: {
     textTransform: 'none',
-    minWidth: 72,
+    minWidth: 80,
     '&:hover': {
       color: 'secondary',
       opacity: 1,
@@ -51,7 +51,6 @@ const Navigation = () => {
         <AppBar position='static' color='default'>
           <Toolbar>
             <Title />
-            
             <div>
               <Tabs indicatorColor='primary' className={classes.tabs} value={location.pathname}>
                 <AltTab className={classes.tabItem} label='About' value='/about' component={Link} to={'/about'} />
