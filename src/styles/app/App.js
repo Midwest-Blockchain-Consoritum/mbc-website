@@ -12,7 +12,8 @@ const styles = {
     fontFamily: 'Roboto'
   },
   page: {
-    background: 'white'
+    background: 'white',
+    margin: '1em'
   }
 }
 

@@ -18,7 +18,7 @@ const Footer = () => {
         <Grid item xs={12} sm={6}>
           <Hidden xsDown>
             <div className={classes.footerPrimary}>
-              <Typography variant='body1'>
+              <Typography variant='body2'>
                 &copy;2020 Midwest Blockchain Consoritum
               </Typography>
             </div>
@@ -35,8 +35,8 @@ const Footer = () => {
             <IconButton aria-label='linkedin'>
               <LinkedInIcon className={classes.social}/>
             </IconButton>
-            <Hidden xsUp>
-              <Typography variant='body1'>
+            <Hidden smUp>
+              <Typography variant='body2'>
                 &copy;2020 Midwest Blockchain Consoritum
               </Typography>
             </Hidden>

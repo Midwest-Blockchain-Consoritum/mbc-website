@@ -35,7 +35,7 @@ const Title = () => {
     <div className={classes.title}>
       <Typography variant='h4'>
         <Link className={classes.link} to='/'>
-          Midwest Blockchain Consoritum
+          MBC
         </Link>
       </Typography>
     </div>
@@ -44,10 +44,11 @@ const Title = () => {
 
 const Navigation = () => {
   const classes = useStyles()
+
   return (
     <div className={classes.root}>
       <Route render={({ location }) => (
-
+        
         <AppBar position='static' color='default'>
           <Toolbar>
             <Title />
