@@ -13,15 +13,15 @@ const AltTab = withStyles(() => ({
     textTransform: 'none',
     minWidth: 80,
     '&:hover': {
-      color: 'secondary',
+      color: 'white',
       opacity: 1,
     },
     '&$selected': {
-      color: 'purple',
+      color: 'white',
       fontWeight: '400',
     },
     '&:focus': {
-      color: 'secondary',
+      color: 'white',
     },
   },
   selected: {},
@@ -49,11 +49,11 @@ const Navigation = () => {
     <div className={classes.root}>
       <Route render={({ location }) => (
         
-        <AppBar position='static' color='default'>
+        <AppBar position='fixed' color='secondary'>
           <Toolbar>
             <Title />
             <div>
-              <Tabs indicatorColor='primary' className={classes.tabs} value={location.pathname}>
+              <Tabs indicatorColor='secondary' className={classes.tabs} value={location.pathname}>
                 <AltTab className={classes.tabItem} label='About' value='/about' component={Link} to={'/about'} />
                 <AltTab label='Consulting' value='/consulting' component={Link} to={'/consulting'} />
               </Tabs>

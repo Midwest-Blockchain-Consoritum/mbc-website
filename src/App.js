@@ -9,10 +9,13 @@ import GoogleFontLoader from 'react-google-font-loader'
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#9c27b0'
+      main: '#6a1b9a'
     },
     secondary: {
-      main: '#e1bee7',
+      main: '#f3e5f5',
+    },
+    white: {
+      main: '#ffffff'
     }
   }
 })

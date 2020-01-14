@@ -7,13 +7,15 @@ Author: [Zachary Thielemann](https://github.com/zachdt)
 To get started, type `yarn install` or `npm install` in the root directory after cloning.
 <br />
 
-## Component Structure
+# Project Structure
 
-The `/src` folder is strcutured for maximum clarity and reuseability.
+## /functions
 
-### /actions
+### /ical-parser
 
-Contains all functions that interact with an external server/database.  (ex. logIn, logOut, sendEmail, etc.)
+Contains the GCP cloud-functions API for Google Calendar integration.
+
+## /src
 
 ### /assets
 

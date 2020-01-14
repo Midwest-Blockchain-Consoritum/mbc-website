@@ -7,17 +7,21 @@ const styles = {
     color: 'white'
   },
   footerPrimary: {
-    color: 'purple',
+    color: '#f3e5f5',
     textAlign: 'right',
     marginRight: '1em',
-    top: '20%',
-    position: 'relative'
+    top: '30%',
+    position: 'relative',
   },
   footerSecondary: {
-    backgroundColor: 'purple',
+    backgroundColor: '#6a1b9a',
     color: 'white',
     textAlign: 'left',
-    verticalAlign: 'bottom'
+    verticalAlign: 'bottom',
+    paddingLeft: '.5em'
+  },
+  hidden: {
+    marginLeft: '.7em !important'
   }
 }
 
