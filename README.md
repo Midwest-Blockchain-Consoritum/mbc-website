@@ -2,26 +2,28 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Architecture by [Zachary Thielemann](https://github.com/zachdt)
+Author: [Zachary Thielemann](https://github.com/zachdt)
 
-To get started, type `yarn install` or `npm install` in the root directory.
+To get started, type `yarn install` or `npm install` in the root directory after cloning.
 <br />
 
-## Component Structure
+# Project Structure
 
-The `/src` folder is strcutured for maximum clarity and reuseability.
+## /functions
 
-### /actions
+### /ical-parser
 
-Contains all functions that interact with an external server/database.  (ex. logIn, logOut, sendEmail, etc.)
+Contains the GCP cloud-functions API for Google Calendar integration.
+
+## /src
 
 ### /assets
 
 Contains all static assests (favicons mostly).  Never drop images in here, always reference an external CDN link.
 
-### /router
+### /routes
 
-Contains `react-router-dom` components and logic.  Wrapped by Navigation Header and Footer.  Used to add or authenticate new routes.
+Contains active `react-router-dom` route list and respective components.  Passes BrowserRouter to child components.
 
 ### /styles
 
@@ -30,7 +32,6 @@ Contains all style files.  This project uses `react-jss`.  Need to write styles 
 ### /views
 
 Contains all UI related custom react components, broken into layout components and router destinations.
-All router destinations are rendered in between the navigation bar and footer.
 
 Current Views:
 * footer
@@ -40,6 +41,9 @@ Current Views:
 * navigation
   * navigation header component, persists on the top of every page
 
+## Grid System
+
+Material-UI includes a built-in breakpoint system for adjusting pages for different screen sizes.  The Grid component container/item system is utilized in all views.  These breakpoints are not expressed in css/jss, but at the compontent level.  Read `/src/views/landing/Landing.js` for a good example of integration.
 
 ## Code Styling 
 

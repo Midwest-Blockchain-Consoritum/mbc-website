@@ -1,15 +1,14 @@
 const styles = {
   root: {
-    margin: '-.5em'
+    margin: '0em',
   },
   title: {
     flexGrow: 1,
     textDecoration: 'none',
-    color: 'white'
+    color: 'white',
   },
-  link:  {
-    textDecoration: 'none',
-    color: 'white'
+  tabs: {
+    color: 'purple'
   }
 }
 
