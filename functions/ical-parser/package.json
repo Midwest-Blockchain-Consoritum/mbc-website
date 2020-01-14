@@ -1,0 +1,15 @@
+{
+  "name": "ical-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "deploy": "gcloud functions deploy getICal",
+    "new": "gcloud functions deploy getICal --allow-unauthenticated --trigger-http --runtime=nodejs10"
+  },
+  "author": "Zachary Thielemann",
+  "license": "ISC",
+  "dependencies": {
+    "node-ical": "^0.10.0"
+  }
+}
