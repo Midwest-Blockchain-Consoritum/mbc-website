@@ -10,7 +10,6 @@ exports.getICal =  (req, res) => {
   ical.fromURL(url, {}, function(err, data) {
     if (err) res.send(err)
 
-    Object.keys(data).map(key => { Object.assign({}, data[key], {datetime: new Date(data[key].start)}) })
     res.send(data)
   })
 }

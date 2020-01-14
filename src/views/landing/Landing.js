@@ -3,16 +3,14 @@ import React, { useEffect } from 'react'
 import { Typography, Grid, GridList, GridListTile, Paper} from '@material-ui/core'
 import { createUseStyles } from 'react-jss'
 
-import styles from '../../styles/landing/Landing'
-
 import EventFeed from './EventFeed'
 
+import styles from '../../styles/landing/Landing'
+
 import content from './Content'
-import zIndex from '@material-ui/core/styles/zIndex';
 
 
 const useStyles = createUseStyles(styles)
-
 
 const Slider = () => {
   const classes = useStyles()
@@ -22,7 +20,7 @@ const Slider = () => {
     { url: 'https://builtin.com/sites/default/files/styles/medium/public/2019-01/blockchain-companies.jpg' },
     { url: 'https://www.aithority.com/wp-content/uploads/2019/07/Blockchain-1.jpg' },
   ]
-  
+
   return (
     <GridList className={classes.gridList} cellHeight={200} spacing={3} cols={2}>
       {images.map(image => (
