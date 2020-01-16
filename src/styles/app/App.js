@@ -5,7 +5,7 @@ const styles = {
     body: {
       margin: 0,
       marginRight: '-2px',
-      background: ''
+      background: 'linear-gradient(45deg, #c158dc 30%, #5c007a 90%)',
     }
   },
   root: {

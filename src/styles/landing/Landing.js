@@ -7,10 +7,14 @@ const styles = {
     padding: '2em',
   },
   aboutText: {
+
+  },
+  spacer: {
+    minHeight: '1em'
   },
   events: {
     padding: '.5em',
-  }
+  },
 }
 
 
