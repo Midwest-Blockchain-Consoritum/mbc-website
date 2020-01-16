@@ -3,7 +3,7 @@ const styles = {
     flexGrow: 1,
   },
   about: {
-    marginTop: '2em',
+    marginTop: '1em',
     padding: '2em',
   },
   aboutText: {

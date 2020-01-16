@@ -14,7 +14,7 @@ class EventFeed extends React.Component {
     super(props)
     this.state = {
       error: null,
-      isLoaded: false,
+      isLoaded: true,
       items: null
     }
   }
