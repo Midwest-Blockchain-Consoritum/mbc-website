@@ -13,7 +13,7 @@ import Footer from '../views/footer/Footer'
 
 import Landing from '../views/landing/Landing'
 import About from '../views/about/About'
-import Consulting from '../views/consulting/Consulting'
+import Conference from '../views/conference/Conference'
 
 const useStyles = createUseStyles(styles)
 
@@ -28,7 +28,7 @@ const Routes = () => {
           <Switch>
             <Route exact path='/' component={Landing} />
             <Route exact path='/about' component={About} />
-            <Route exact path='/consulting' component={Consulting} />
+            <Route exact path='/conference' component={Conference} />
           </Switch>
         </div>
         <Footer />
