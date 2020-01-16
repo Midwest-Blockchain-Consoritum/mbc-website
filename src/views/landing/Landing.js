@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-import { Typography, Grid, GridList, GridListTile, Paper} from '@material-ui/core'
+import { Typography, Grid, GridList, GridListTile, Paper, CircularProgress} from '@material-ui/core'
 import { createUseStyles } from 'react-jss'
 
 import { Fade } from 'react-slideshow-image'
@@ -17,6 +17,7 @@ const useStyles = createUseStyles(styles)
 
 const ImageSlider = () => {
   const classes = useStyles()
+
   const images = [
     { url: 'https://i.imgur.com/fsB5TAn.jpg' },
     { url: 'https://i.imgur.com/ZBaxWPe.jpg' },
@@ -25,8 +26,8 @@ const ImageSlider = () => {
   ]
 
   const settings = {
-    duration: 3500,
-    transitionDuration: 500,
+    duration: 4000,
+    transitionDuration: 1000,
     infinite: true,
     indications: true,
     arrows: false,
@@ -35,18 +36,17 @@ const ImageSlider = () => {
   }
 
   return (
-    <GridList cellHeight={400} cols={1} spacing={0} >
-      <GridListTile>
-
-        <Fade {...settings}>
-          {images.map(image => (
-            <img width='1000em' src={image.url}></img>
-          ))} 
-        </Fade>
-      </GridListTile>
-
-    </GridList>
-
+    <div className={classes.intro}>
+      <GridList cellHeight={400} cols={1} spacing={0} >
+        <GridListTile>
+          <Fade {...settings}>
+            {images.map(image => (
+              <img width='1000em' alt='carousel' src={image.url} />
+            ))} 
+          </Fade>
+        </GridListTile>
+      </GridList>
+    </div>
   )
 }
 
@@ -69,7 +69,6 @@ const Landing = () => {
         </Grid>
         <Grid item xs={12} sm={4} md={4} lg={3} xl={2}>
           <div className={classes.spacer}/>
-
           <Paper elevation={20}>
             <Typography className={classes.events} variant='h3'>Upcoming Events</Typography>
             <EventFeed></EventFeed>

@@ -15,6 +15,13 @@ const styles = {
   events: {
     padding: '.5em',
   },
+  '@keyframes fadeIn': {
+    from: {opacity: 0},
+    to: {opacity: 1}
+  },
+  intro: {
+    animation: '$fadeIn 4s'
+  }
 }
 
 
