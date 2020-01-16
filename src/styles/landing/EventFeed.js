@@ -9,6 +9,9 @@ const styles = {
   },
   locationIcon: {
     marginLeft: '10px'
+  },
+  button: {
+    marginLeft: '1em'
   }
 }
 
