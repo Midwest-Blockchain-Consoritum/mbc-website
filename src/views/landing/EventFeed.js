@@ -20,6 +20,8 @@ class EventFeed extends React.Component {
   }
 
   componentDidMount() {
+
+    /*
     console.log('fetching')
     fetch('https://us-central1-mbc-website-prod.cloudfunctions.net/getICal')
       .then(res => res.json())
@@ -41,6 +43,7 @@ class EventFeed extends React.Component {
           })
         }
       )
+    */
   }
 
   render() {
