@@ -20,7 +20,7 @@ const styles = {
     to: {opacity: 1}
   },
   intro: {
-    animation: '$fadeIn 4s'
+    animation: '$fadeIn 1s'
   }
 }
 
