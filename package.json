@@ -29,7 +29,8 @@
     "superagent": "^5.2.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=8080 serve -s build",
+    "local": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
