@@ -15,8 +15,10 @@ const styles = {
   },
   page: {
     background: '',
-    margin: '1em',
-    marginTop: '5em'
+    margin: '0em',
+    marginTop: '5em',
+    overflow: 'hidden'
+
   }
 }
 

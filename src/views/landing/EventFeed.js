@@ -90,7 +90,7 @@ class EventFeed extends React.Component {
               <div></div>
           ))} */}
 
-          <Grid item xs={6} sm={12}>
+          <Grid item xs={12} sm={12}>
             <Card raised className={classes.card}>
               <CardContent>
                 <Typography color='textSecondary' variant='body2'>March 13, 2020</Typography>
@@ -100,10 +100,10 @@ class EventFeed extends React.Component {
                 <Typography variant='body1'></Typography>
               </CardContent>
               <Grid container item xs={12}>
-                <Grid item xs={2}>
+                <Grid item xs={1} sm={1} md={2}>
                   <LocationOnIcon color='action' className={classes.locationIcon}/>
                 </Grid>
-                <Grid item xs={10}>
+                <Grid item xs={11} sm={11} md={10}>
                   <Typography color='textSecondary' variant='body1' gutterBottom>
                     Northwestern Mutual Building, Milwaukee, WI
                   </Typography>

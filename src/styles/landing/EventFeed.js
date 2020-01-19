@@ -8,7 +8,7 @@ const styles = {
     position: 'relative'
   },
   locationIcon: {
-    marginLeft: '10px'
+    marginLeft: '10px',
   },
   button: {
     marginLeft: '1em'

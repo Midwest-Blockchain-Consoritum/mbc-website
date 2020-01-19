@@ -15,6 +15,8 @@ import Landing from '../views/landing/Landing'
 import About from '../views/about/About'
 import Conference from '../views/conference/Conference'
 
+import ScrollToTop from './ScrollToTop'
+
 const useStyles = createUseStyles(styles)
 
 
@@ -22,6 +24,7 @@ const Routes = () => {
   const classes = useStyles()
   return (
     <Router>
+      <ScrollToTop/>
       <div className={classes.root}>
         <Navigation />
         <div className={classes.page}>
