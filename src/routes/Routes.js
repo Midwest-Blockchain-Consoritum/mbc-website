@@ -13,7 +13,9 @@ import Footer from '../views/footer/Footer'
 
 import Landing from '../views/landing/Landing'
 import About from '../views/about/About'
-import Consulting from '../views/consulting/Consulting'
+import Conference from '../views/conference/Conference'
+
+import ScrollToTop from './ScrollToTop'
 
 const useStyles = createUseStyles(styles)
 
@@ -22,13 +24,14 @@ const Routes = () => {
   const classes = useStyles()
   return (
     <Router>
+      <ScrollToTop/>
       <div className={classes.root}>
         <Navigation />
         <div className={classes.page}>
           <Switch>
             <Route exact path='/' component={Landing} />
             <Route exact path='/about' component={About} />
-            <Route exact path='/consulting' component={Consulting} />
+            <Route exact path='/conference' component={Conference} />
           </Switch>
         </div>
         <Footer />

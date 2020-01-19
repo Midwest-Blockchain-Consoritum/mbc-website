@@ -1,5 +1,5 @@
 import React from 'react'
-import { CircularProgress, Card, CardContent, CardActionArea, Typography, Grid, withStyles, Divider } from '@material-ui/core'
+import { CircularProgress, Card, CardContent, CardActions, Typography, Grid, withStyles, Divider, Button } from '@material-ui/core'
 import LocationOnIcon from '@material-ui/icons/LocationOn'
 import ErrorIcon from '@material-ui/icons/Error'
 
@@ -14,12 +14,14 @@ class EventFeed extends React.Component {
     super(props)
     this.state = {
       error: null,
-      isLoaded: false,
+      isLoaded: true,
       items: null
     }
   }
 
   componentDidMount() {
+
+    /*
     console.log('fetching')
     fetch('https://us-central1-mbc-website-prod.cloudfunctions.net/getICal')
       .then(res => res.json())
@@ -41,6 +43,7 @@ class EventFeed extends React.Component {
           })
         }
       )
+    */
   }
 
   render() {
@@ -58,7 +61,7 @@ class EventFeed extends React.Component {
     } else {
       return (
         <Grid container spacing={1}>
-          {Object.keys(items)
+          {/* {Object.keys(items)
             .map(obj => (
             moment(`${items[obj].start}`).isAfter() ?
             <Grid item xs={6} sm={12}>
@@ -85,9 +88,35 @@ class EventFeed extends React.Component {
               </Grid>
             :
               <div></div>
-          ))}
+          ))} */}
+
+          <Grid item xs={12} sm={12}>
+            <Card raised className={classes.card}>
+              <CardContent>
+                <Typography color='textSecondary' variant='body2'>March 13, 2020</Typography>
+                <br/>
+                <Typography variant='h6'>Milwaukee Blockchain Conference</Typography>
+                <Divider light/>
+                <Typography variant='body1'></Typography>
+              </CardContent>
+              <Grid container item xs={12}>
+                <Grid item xs={1} sm={1} md={2}>
+                  <LocationOnIcon color='action' className={classes.locationIcon}/>
+                </Grid>
+                <Grid item xs={11} sm={11} md={10}>
+                  <Typography color='textSecondary' variant='body1' gutterBottom>
+                    Northwestern Mutual Building, Milwaukee, WI
+                  </Typography>
+                </Grid>
+              </Grid>
+              <CardActions>
+                  <Button className={classes.button} variant='outlined' size='small' target='__blank' href='https://msu.co1.qualtrics.com/jfe/form/SV_5v5ZxJWO6vkIf0F' >Register</Button>
+                  <Button className={classes.button} size='small' href='https://midwestblockchain.org/conference' >Learn More</Button>
+              </CardActions>
+            </Card>
+          </Grid>
         </Grid>
-      );
+      )
     }
   }
 }
