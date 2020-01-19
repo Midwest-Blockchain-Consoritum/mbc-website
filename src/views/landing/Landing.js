@@ -56,7 +56,7 @@ const Landing = () => {
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
-        <Grid item xs={12} sm={12} md={8} lg={9} xl={10}>
+        <Grid item xs={12} sm={12} md={8} lg={8} xl={9}>
           <Grid item>
             <div className={classes.spacer}/>
             <ImageSlider />
@@ -67,7 +67,7 @@ const Landing = () => {
             </Paper>
           </Grid>
         </Grid>
-        <Grid item xs={12} sm={12} md={4} lg={3} xl={2}>
+        <Grid item xs={12} sm={12} md={4} lg={4} xl={3}>
           <div className={classes.spacer}/>
           <Paper elevation={20}>
             <Typography className={classes.events} variant='h3'>Upcoming Events</Typography>
