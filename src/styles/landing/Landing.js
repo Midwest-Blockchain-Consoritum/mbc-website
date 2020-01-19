@@ -1,6 +1,8 @@
 const styles = {
   root: {
     flexGrow: 1,
+    margin: '1em',
+    animation: '$fadeIn 1s'
   },
   about: {
     marginTop: '1em',
@@ -20,7 +22,11 @@ const styles = {
     to: {opacity: 1}
   },
   intro: {
-    animation: '$fadeIn 4s'
+    animation: '$fadeIn 0s',
+  },
+  imga: {
+    boxShadow: '20em 20em'
+
   }
 }
 

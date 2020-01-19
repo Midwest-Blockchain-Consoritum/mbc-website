@@ -4,7 +4,14 @@ const styles = {
   },
   title: {
     flexGrow: 1,
-    textDecoration: 'none',
+    textDecoration: 'none !important',
+  },
+  titleText: {
+    paddingTop: '.15em',
+    textDecoration: 'none !important',
+    paddingLeft: '1em',
+  },
+  logo: {
   },
   title2: {
     flexGrow: 1,
