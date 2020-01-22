@@ -19,6 +19,7 @@ const ImageSlider = () => {
   const classes = useStyles()
 
   const images = [
+    { url: 'https://i.imgur.com/BLquf0g.jpg' },
     { url: 'https://i.imgur.com/fsB5TAn.jpg' },
     { url: 'https://i.imgur.com/ZBaxWPe.jpg' },
     { url: 'https://i.imgur.com/insWI6r.jpg' },
@@ -56,18 +57,18 @@ const Landing = () => {
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
-        <Grid item xs={12} sm={12} md={8} lg={8} xl={9}>
+        <Grid item xs={12} sm={12} md={8} lg={8}>
           <Grid item>
             <div className={classes.spacer}/>
             <ImageSlider />
           </Grid>
           <Grid item>
-            <Paper className={classes.about} elevation={15}>
+            <Paper className={classes.about} elevation={25}>
               <Typography className={classes.aboutText}  variant='h5'>{content.about}</Typography>
             </Paper>
           </Grid>
         </Grid>
-        <Grid item xs={12} sm={12} md={4} lg={4} xl={3}>
+        <Grid item xs={12} sm={12} md={4} lg={4}>
           <div className={classes.spacer}/>
           <Paper elevation={20}>
             <Typography className={classes.events} variant='h3'>Upcoming Events</Typography>
@@ -75,6 +76,8 @@ const Landing = () => {
           </Paper>
         </Grid>
       </Grid>
+      <div className={classes.spacer}/>
+      <div className={classes.spacer}/>
     </div>
   )
 }

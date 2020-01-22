@@ -64,8 +64,8 @@ const Title = (prop) => {
         <Grid item>
           <Hidden smDown>
             <Link style={{textDecoration: 'none'}} to='/'>
-              <Typography color='error' className={classes.titleText} variant='h4'>
-                Midwest Blockchain Consoritum
+              <Typography color='error' className={classes.titleText} variant='h5'>
+                Midwest Blockchain Consortium
               </Typography>
             </Link>
           </Hidden>

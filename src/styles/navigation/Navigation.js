@@ -7,7 +7,7 @@ const styles = {
     textDecoration: 'none !important',
   },
   titleText: {
-    paddingTop: '.15em',
+    paddingTop: '.4em',
     textDecoration: 'none !important',
     paddingLeft: '1em',
   },

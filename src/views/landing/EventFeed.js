@@ -3,8 +3,6 @@ import { CircularProgress, Card, CardContent, CardActions, Typography, Grid, wit
 import LocationOnIcon from '@material-ui/icons/LocationOn'
 import ErrorIcon from '@material-ui/icons/Error'
 
-import moment from 'moment'
-
 import styles from '../../styles/landing/EventFeed'
 //have to apply withStyles to the Higher-Order Component at export
 
@@ -110,8 +108,8 @@ class EventFeed extends React.Component {
                 </Grid>
               </Grid>
               <CardActions>
-                  <Button className={classes.button} variant='outlined' size='small' target='__blank' href='https://msu.co1.qualtrics.com/jfe/form/SV_5v5ZxJWO6vkIf0F' >Register</Button>
-                  <Button className={classes.button} size='small' href='https://midwestblockchain.org/conference' >Learn More</Button>
+                  <Button className={classes.button} variant='outlined' size='small' target='__blank' href='https://www.eventbrite.com/e/2020-milwaukee-blockchain-conference-tickets-86431955305'>Register</Button>
+                  <Button className={classes.buttoen} size='small' href='https://midwestblockchain.org/conference' >About</Button>
               </CardActions>
             </Card>
           </Grid>

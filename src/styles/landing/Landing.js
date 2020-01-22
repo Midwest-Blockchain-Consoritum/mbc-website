@@ -1,18 +1,20 @@
 const styles = {
   root: {
     flexGrow: 1,
-    margin: '1em',
+    marginLeft: '1em',
+    marginRight: '1em',
     animation: '$fadeIn 1s'
   },
   about: {
     marginTop: '1em',
     padding: '2em',
+    zIndex: '1000'
   },
   aboutText: {
 
   },
   spacer: {
-    minHeight: '1em'
+    minHeight: '.5em'
   },
   events: {
     padding: '.5em',
@@ -23,11 +25,8 @@ const styles = {
   },
   intro: {
     animation: '$fadeIn 0s',
+    zIndex: '10'
   },
-  imga: {
-    boxShadow: '20em 20em'
-
-  }
 }
 
 

@@ -9,11 +9,12 @@ const styles = {
   },
   school: {
     padding: '0em',
-    margin: '3em',
-    marginBottom: '10em'
+    margin: '.5em',
+    marginBottom: '10em',
+    zIndex: '100'
   },
   cardInt: {
-    padding: '1em'
+    padding: '.5em'
   },
   logoContainer: {
     margin: '8em',
@@ -23,7 +24,7 @@ const styles = {
     borderRadius: '50%',
     opacity: '60%',
     marginBottom: '20em',
-    marginRight: '5em'
+    marginRight: '5em',
   },
   title: {
     paddingLeft: '1em',

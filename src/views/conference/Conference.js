@@ -31,7 +31,7 @@ const Conference = () => {
                 Milwaukee, WI
               </Typography>
               <hr/>
-              <Button color='inherit' variant='outlined' target='__blank' href='https://msu.co1.qualtrics.com/jfe/form/SV_5v5ZxJWO6vkIf0F' >Register</Button>
+              <Button color='inherit' variant='outlined' target='__blank' href='https://www.eventbrite.com/e/2020-milwaukee-blockchain-conference-tickets-86431955305'>Register</Button>
             </Typography>
             <div className={classes.spacerSmall}></div>
 
@@ -79,7 +79,9 @@ const Conference = () => {
             </Paper>
           </Grid>
         </Grid>
-
+        <div className={classes.registerDiv}>
+          <Button color='inherit' variant='outlined' size='large' target='__blank' href='https://msu.co1.qualtrics.com/jfe/form/SV_5v5ZxJWO6vkIf0F'>Apply Before Feburary 28th</Button>
+        </div>
 
         <div className={classes.spacerSmall}></div>
         <Grid container direction='row-reverse' item xs={12} sm={12}>
@@ -97,18 +99,18 @@ const Conference = () => {
         <Grid container item xs={12}>
           <Grid item container direction="row" justify="center" alignItems="center">
             <Card className={classes.textCard} raised>
-              <Typography className={classes.textBox} color='textSecondary' variant='h4'>January 13th, 2020</Typography>
-              <Typography className={classes.textBox} variant='h4'>Applications Open</Typography>
+              <Typography className={classes.textBox} color='textSecondary' variant='h5'>January 13th, 2020</Typography>
+              <Typography className={classes.textBox} variant='h5'>Pitch Competition Applications Open</Typography>
 
 
             </Card>
             <Card className={classes.textCard} elevation={15}>
-              <Typography className={classes.textBox} color='textSecondary' variant='h4'>Feburary 28th, 2020</Typography>
-              <Typography className={classes.textBox} variant='h4'>Applications Close</Typography>
+              <Typography className={classes.textBox} color='textSecondary' variant='h5'>Feburary 28th, 2020</Typography>
+              <Typography className={classes.textBox} variant='h5'>Pitch Competition Applications Close</Typography>
             </Card>            
             <Card className={classes.textCard} elevation={15}>
-            <Typography className={classes.textBox} color='textSecondary' variant='h4'>March 13th, 2020</Typography>
-              <Typography className={classes.textBox} variant='h4'>Competition Day and Conference Start</Typography>
+            <Typography className={classes.textBox} color='textSecondary' variant='h5'>March 13th, 2020</Typography>
+              <Typography className={classes.textBox} variant='h5'>Competition Day and Conference Start</Typography>
             </Card>
           </Grid>
         </Grid>
