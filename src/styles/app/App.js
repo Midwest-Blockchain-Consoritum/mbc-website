@@ -11,14 +11,15 @@ const styles = {
   root: {
     margin: '0',
     fontFamily: 'Roboto',
-    backgroundColor: ''
+    display: 'inline'
   },
   page: {
-    background: '',
-    margin: '0em',
+    position: 'relative',
+    margin: 'auto',
     marginTop: '5em',
-    overflow: 'hidden'
-
+    overflow: 'hidden',
+    maxWidth: '1600px',
+    float: 'none',
   }
 }
 

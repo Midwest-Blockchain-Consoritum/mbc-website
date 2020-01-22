@@ -20,7 +20,7 @@ const styles = {
     padding: '1em',
   },
   textCard: {
-    margin: '3em',
+    margin: '1em',
     marginLeft: '0em',
   },
   spacer: {
@@ -28,6 +28,12 @@ const styles = {
   },
   spacerSmall: {
     margin: '1em'
+  },
+  registerDiv: {
+    margin: 'auto',
+    marginTop: '1em',
+    marginBottom: '3em',
+    color: 'white'
   }
 }
 
