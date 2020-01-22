@@ -9,11 +9,6 @@ To get started, type `yarn install` or `npm install` in the root directory after
 
 # Project Structure
 
-## /functions
-
-### /ical-parser
-
-Contains the GCP cloud-functions API for Google Calendar integration.
 
 ## /src
 
