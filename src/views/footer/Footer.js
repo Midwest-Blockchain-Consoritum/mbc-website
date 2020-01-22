@@ -19,7 +19,7 @@ const Footer = () => {
           <Hidden xsDown>
             <div className={classes.footerPrimary}>
               <Typography variant='body2'>
-                &copy;2020 Midwest Blockchain Consoritum
+                &copy;2020 Midwest Blockchain Consortium
               </Typography>
             </div>
           </Hidden>
@@ -37,7 +37,7 @@ const Footer = () => {
             </IconButton>
             <Hidden smUp>
               <Typography className={classes.hidden} variant='body2'>
-                &copy;2020 Midwest Blockchain Consoritum
+                &copy;2020 Midwest Blockchain Consortium
               </Typography>
             </Hidden>
           </div>
