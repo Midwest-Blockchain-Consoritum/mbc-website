@@ -9,8 +9,9 @@ const styles = {
   },
   school: {
     padding: '0em',
-    margin: '.5em',
-    marginBottom: '10em',
+    margin: '1em',
+    marginBottom: '8em',
+    maxWidth: '50em',
     zIndex: '100'
   },
   cardInt: {

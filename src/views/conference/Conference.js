@@ -11,27 +11,28 @@ import content from './Content'
 const makeStyles = createUseStyles(styles)
 
 const Conference = () => {
-
   const classes = makeStyles()
   return (
     <div className={classes.root}>
       <Grid container>
         <Grid container item xs={12} sm={12} md={6} xl={6}>
           <Grid item xl={12}>
-            <Typography className={classes.title} color='error' variant='h3'>Milwaukee Blockchain Conference</Typography>
+            <Typography className={classes.title} color='error' variant='h3'>MBC Pitch Competition</Typography>
           </Grid>
           <Grid item className={classes.subtitle}>
             <Typography color='error' variant='h4'>
+              <br/>
+
               <br/>
               March 13th, 2020
               <br/>
               <br/>
               <Typography color='error' variant='h6'>
                 <LocationOnIcon className={classes.locationIcon}/>
-                Milwaukee, WI
+                Milwaukee Blockchain Conference
               </Typography>
               <hr/>
-              <Button color='inherit' variant='outlined' target='__blank' href='https://www.eventbrite.com/e/2020-milwaukee-blockchain-conference-tickets-86431955305'>Register</Button>
+              <Button color='inherit' variant='outlined' target='__blank' href='https://www.eventbrite.com/e/2020-milwaukee-blockchain-conference-tickets-86431955305'>Apply Now</Button>
             </Typography>
             <div className={classes.spacerSmall}></div>
 
@@ -56,7 +57,7 @@ const Conference = () => {
         <div className={classes.spacer}></div>
         <Grid container item xs={12} sm={12}>
           <Grid item>
-            <Typography className={classes.title} color='error' variant='h3'>Pitch Competition</Typography>
+            <Typography className={classes.title} color='error' variant='h3'>Competition Details</Typography>
             <hr />
           </Grid>
           <Grid item className={classes.subtitle}>

@@ -16,7 +16,7 @@ const About = () => {
     <div className={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={12} md={4} lg={4} xl={5}>
-          <Typography className={classes.title} variant='h4' color='error'>Our Universities</Typography>
+          <Typography className={classes.title} variant='h3' color='error'>Our Universities</Typography>
           {content.schools.map((school, index) => (
             <Hidden smDown>
               <div className={classes.logoContainer}>

@@ -31,6 +31,7 @@ const theme = createMuiTheme({
 const AltTab = withStyles(() => ({
   root: {
     textTransform: 'none',
+    fontSize: '1em',
     minWidth: 80,
     '&:hover': {
       color: 'white',
@@ -84,16 +85,26 @@ const Navigation = () => {
         <Route render={({ location }) => (
           <AppBar className={classes.toobar} position='fixed' color='primary'>
             <Toolbar>
-              <Title prop={location.pathname} />
-              <div>
-                <Tabs indicatorColor='secondary' className={classes.tabs} value={location.pathname}>
-                  <AltTab className={classes.tabItem} label='About' value='/about' component={Link} to={'/about'} />
-                  <AltTab label='Conference' value='/conference' component={Link} to={'/conference'} />
-                </Tabs>
-              </div>
+              <Grid container>
+                <Grid item xs={10} sm={9} md={9} lg={9} xl={9}>
+                  <Title prop={location.pathname} />
+                </Grid>
+                <Grid item>
+                  <div>
+                    <Tabs indicatorColor='secondary' className={classes.tabs} value={location.pathname}>
+                      <AltTab label='Universities' value='/universities' component={Link} to={'/universities'} />
+                      {/*<AltTab label='Blog' value='/blog' component={Link} to={'/blog'} />*/}
+                      <AltTab label='Pitch Competition' value='/pitchcompetition' component={Link} to={'/pitchcompetition'} />
+                    </Tabs>
+                  </div>
+                </Grid>
+              </Grid>
             </Toolbar>
           </AppBar>
         )} />
+        <Hidden lgUp>
+          <div className={classes.spacer}/>
+        </Hidden>
       </ThemeProvider>
     </div>
   )
