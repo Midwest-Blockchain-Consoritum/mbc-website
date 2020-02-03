@@ -32,7 +32,7 @@ const Conference = () => {
                 Milwaukee Blockchain Conference
               </Typography>
               <hr/>
-              <Button color='inherit' variant='outlined' target='__blank' href='https://www.eventbrite.com/e/2020-milwaukee-blockchain-conference-tickets-86431955305'>Apply Now</Button>
+              <Button color='inherit' variant='outlined' target='__blank' href='https://msu.co1.qualtrics.com/jfe/form/SV_5v5ZxJWO6vkIf0F'>Apply Now</Button>
             </Typography>
             <div className={classes.spacerSmall}></div>
 
