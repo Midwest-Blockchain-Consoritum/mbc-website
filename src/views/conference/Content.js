@@ -1,5 +1,5 @@
 const content = {
-  description: 'Designed to catalyze investment and create jobs for Wisconsin residents. Entrepreneurs and established companies come to learn about opportunities in blockchain technology and connect with like-minded people.',
+  description: 'Compete against top midwestern universities in a blockchain business model pitch competition for a cash prize, investor exposure, and bragging rights.',
 
   second: 'Co-hosted by Marquette Blockchain Lab and  Northwestern Mutual at the Northwestern Mutual Tower on March 13th, 2020, this conference will bring together 500+ business leaders, entrepreneurs, and students.',
 

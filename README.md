@@ -47,7 +47,7 @@ This project was built using the Prettier and ESLint plugin for VSCode.  If you 
 ### Code Rules
 
 * tabWidth
-  * 4 spaces
+  * 2 spaces
 * semi
   * false - don't use semicolons at the end of statements!
 * singleQuote
@@ -60,13 +60,17 @@ This project was built using the Prettier and ESLint plugin for VSCode.  If you 
 
 In the project directory, you can run:
 
-### `yarn start`
+### `yarn local`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
+
+### `yarn start`
+
+Initiates a static server on port 8080.  Used in serverless deployment environment (GCP App Engine in our case).
 
 ### `yarn test`
 

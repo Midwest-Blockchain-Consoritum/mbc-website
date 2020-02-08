@@ -14,6 +14,7 @@ import Footer from '../views/footer/Footer'
 import Landing from '../views/landing/Landing'
 import About from '../views/about/About'
 import Conference from '../views/conference/Conference'
+import Blog from '../views/blog/Blog'
 
 import ScrollToTop from './ScrollToTop'
 
@@ -30,8 +31,9 @@ const Routes = () => {
         <div className={classes.page}>
           <Switch>
             <Route exact path='/' component={Landing} />
-            <Route exact path='/about' component={About} />
-            <Route exact path='/conference' component={Conference} />
+            <Route exact path='/universities' component={About} />
+            {/*<Route exact path='/blog' component={Blog} />*/}
+            <Route exact path='/pitchcompetition' component={Conference} />
           </Switch>
         </div>
         <Footer />

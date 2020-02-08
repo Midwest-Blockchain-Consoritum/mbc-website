@@ -91,9 +91,9 @@ class EventFeed extends React.Component {
           <Grid item xs={12} sm={12}>
             <Card raised className={classes.card}>
               <CardContent>
-                <Typography color='textSecondary' variant='body2'>March 13, 2020</Typography>
+                <Typography color='textSecondary' variant='body2'>March 13th, 2020</Typography>
                 <br/>
-                <Typography variant='h6'>Milwaukee Blockchain Conference</Typography>
+                <Typography variant='h6'>MBC Pitch Competition</Typography>
                 <Divider light/>
                 <Typography variant='body1'></Typography>
               </CardContent>
@@ -103,13 +103,13 @@ class EventFeed extends React.Component {
                 </Grid>
                 <Grid item xs={11} sm={11} md={10}>
                   <Typography color='textSecondary' variant='body1' gutterBottom>
-                    Northwestern Mutual Building, Milwaukee, WI
+                    Milwaukee Blockchain Conference
                   </Typography>
                 </Grid>
               </Grid>
               <CardActions>
-                  <Button className={classes.button} variant='outlined' size='small' target='__blank' href='https://www.eventbrite.com/e/2020-milwaukee-blockchain-conference-tickets-86431955305'>Register</Button>
-                  <Button className={classes.buttoen} size='small' href='https://midwestblockchain.org/conference' >About</Button>
+                  <Button className={classes.button} variant='outlined' size='small' target='__blank' href='https://msu.co1.qualtrics.com/jfe/form/SV_5v5ZxJWO6vkIf0F'>Apply</Button>
+                  <Button className={classes.buttoen} size='small' href='https://midwestblockchain.org/pitchcompetition' >About</Button>
               </CardActions>
             </Card>
           </Grid>
