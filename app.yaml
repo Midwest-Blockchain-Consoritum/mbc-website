@@ -1,7 +1,7 @@
 
 # [START runtime]
-runtime: nodejs
-env: flex
+runtime: nodejs12
+env: standard
 # [END runtime]
 instance_class: F1
 automatic_scaling:
