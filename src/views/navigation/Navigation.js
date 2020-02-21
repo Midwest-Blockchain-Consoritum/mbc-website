@@ -56,7 +56,7 @@ const Title = (prop) => {
   const classes = useStyles()
   return (
     <div className={classes.title}>
-      <Grid container xs={12}>
+      <Grid container>
         <Grid item>
             <Link className={classes.logo} to='/'>
               <img height='40em' alt='MBC' src='https://i.imgur.com/MB6HA6i.png' />
@@ -93,7 +93,6 @@ const Navigation = () => {
                   <div>
                     <Tabs indicatorColor='secondary' className={classes.tabs} value={location.pathname}>
                       <AltTab label='Universities' value='/universities' component={Link} to={'/universities'} />
-                      {/*<AltTab label='Blog' value='/blog' component={Link} to={'/blog'} />*/}
                       <AltTab label='Pitch Competition' value='/pitchcompetition' component={Link} to={'/pitchcompetition'} />
                     </Tabs>
                   </div>

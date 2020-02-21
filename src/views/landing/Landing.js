@@ -8,6 +8,7 @@ import { Fade } from 'react-slideshow-image'
 import styles from '../../styles/landing/Landing'
 
 import EventFeed from './EventFeed'
+import Blog from './Blog'
 
 import content from './Content'
 
@@ -68,16 +69,27 @@ const Landing = () => {
             </Paper>
           </Grid>
         </Grid>
-        <Grid item xs={12} sm={12} md={5} lg={4}>
+        <Grid item xs={12} sm={12} md={5} lg={4} className={classes.side}>
           <div className={classes.spacer}/>
           <Paper elevation={20}>
             <Typography className={classes.events} variant='h3'>Upcoming Events</Typography>
             <EventFeed></EventFeed>
           </Paper>
+          <div className={classes.spacer}/>
+          <div className={classes.spacer}/>
+          <div className={classes.spacer}/>
+
+          <Paper elevation={20}>
+            <Typography className={classes.events} variant='h3'>Blog Posts</Typography>
+            <Blog></Blog>
+            <div className={classes.smallSpacer}/>
+          </Paper>
         </Grid>
       </Grid>
       <div className={classes.spacer}/>
       <div className={classes.spacer}/>
+      <div className={classes.spacer}/>
+
     </div>
   )
 }
