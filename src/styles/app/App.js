@@ -16,7 +16,7 @@ const styles = {
   page: {
     position: 'relative',
     margin: 'auto',
-    marginTop: '5em',
+    marginTop: '4em',
     overflow: 'hidden',
     maxWidth: '1600px',
     float: 'none',

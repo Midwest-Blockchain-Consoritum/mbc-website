@@ -26,6 +26,9 @@ const Footer = () => {
         </Grid>
         <Grid item xs={12} sm={6}>
           <div className={classes.footerSecondary}>
+            <IconButton aria-label='twitter' target='__blank' href='https://twitter.com/blockchainmidwc'>
+                <TwitterIcon className={classes.social}/>
+            </IconButton>
             <IconButton aria-label='linkedin' target='_blank' href='https://www.linkedin.com/company/midwestblockchain/'>
               <LinkedInIcon className={classes.social}/>
             </IconButton>
