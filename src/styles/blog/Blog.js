@@ -1,12 +1,11 @@
 const styles = {
-  root: {
+  card: {
     margin: '1em',
-    animation: '$fadeIn 1s'
+    marginBottom: '2em'
   },
-  '@keyframes fadeIn': {
-    from: {opacity: 0},
-    to: {opacity: 1}
-  },
+  root: {
+    marignBottom: '2em'
+  }
 }
 
-export default styles 
+export default styles

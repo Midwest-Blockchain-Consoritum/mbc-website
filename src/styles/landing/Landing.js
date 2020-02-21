@@ -13,8 +13,14 @@ const styles = {
   aboutText: {
 
   },
+  side: {
+    minHeight: '1em'
+  },
   spacer: {
     minHeight: '.5em'
+  },
+  smallSpacer: {
+    minHeight: '.1em'
   },
   events: {
     padding: '.5em',
